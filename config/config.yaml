@@ -1,0 +1,56 @@
+models:
+  bert:
+    name: "bert-base-uncased"
+    model_type: "bert"
+    max_length: 512
+  roberta:
+    name: "roberta-base"
+    model_type: "roberta"
+    max_length: 512
+  distilbert:
+    name: "distilbert-base-uncased"
+    model_type: "distilbert"
+    max_length: 512
+
+compression:
+  masking_probabilities: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
+  quantization_bits: 8
+  batch_size: 16
+  
+training:
+  epochs: 10
+  learning_rate: 5e-5
+  warmup_steps: 500
+  weight_decay: 0.01
+  gradient_accumulation_steps: 2
+  fp16: true
+  
+data:
+  train_size: 10000
+  test_size: 1000
+  max_length: 256
+  dataset_name: "wikitext"
+  dataset_config: "wikitext-2-raw-v1"
+  
+evaluation:
+  metrics:
+    - "reconstruction_accuracy"
+    - "perplexity"
+    - "rouge"
+    - "bert_score"
+    - "semantic_similarity"
+  save_reconstructions: true
+  
+experiment:
+  seed: 42
+  num_runs: 3
+  device: "cuda"
+  output_dir: "./results"
+  save_models: true
+  logging_steps: 100
+  
+visualization:
+  figure_format: "png"
+  dpi: 300
+  style: "seaborn-v0_8-darkgrid"
+  save_figures: true

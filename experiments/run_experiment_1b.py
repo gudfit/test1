@@ -156,7 +156,7 @@ class Experiment1BRunner:
 
     def run_crumpled_paper_analysis(
         self, corpus_texts: List[str], test_texts: List[str]
-    ) -> Dict[str, Any]:
+    ) -> Dict[str, any]:
         crumpled_metrics = CrumpledPaperMetrics()
         results = {}
         compression_methods = {
@@ -204,7 +204,7 @@ class Experiment1BRunner:
 
         return results
 
-    def _log_model_results(self, model_name: str, results: Dict[str, Any]):
+    def _log_model_results(self, model_name: str, results: Dict[str, any]):
         self.logger.info(f"\nResults for {model_name}:")
         self.logger.info(
             f"  Model size: {results['llm']['size']['disk_size_mb']:.2f} MB"
@@ -222,7 +222,7 @@ class Experiment1BRunner:
             f"  Inference time: {results['llm']['inference_cost']['avg_inference_time_ms']:.2f} ms"
         )
 
-    def save_results(self, results: Dict[str, Any]):
+    def save_results(self, results: Dict[str, any]):
         results_path = os.path.join(
             self.config["experiment"]["output_dir"],
             "results",
@@ -250,7 +250,7 @@ class Experiment1BRunner:
 
         self.logger.info(f"Results saved to {results_path}")
 
-    def create_visualizations(self, results: Dict[str, Any]):
+    def create_visualizations(self, results: Dict[str, any]):
         fig, ax = plt.subplots(figsize=(10, 6))
 
         models = []

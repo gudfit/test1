@@ -75,7 +75,7 @@ class CrumpledPaperMetrics:
 
     def analyze_compression_quality(
         self, original_texts: List[str], reconstructed_texts: List[str]
-    ) -> Dict[str, Any]:
+    ) -> Dict[str, any]:
         all_metrics = []
         for orig, recon in zip(original_texts, reconstructed_texts):
             metrics = self.calculate_crease_metrics(orig, recon)
@@ -208,7 +208,7 @@ class CrumpledPaperMetrics:
 
     def compare_compression_methods(
         self, original_texts: List[str], method_results: Dict[str, List[str]]
-    ) -> Dict[str, Any]:
+    ) -> Dict[str, any]:
         comparison = {}
         for method_name, reconstructed_texts in method_results.items():
             analysis = self.analyze_compression_quality(

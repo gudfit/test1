@@ -1,6 +1,7 @@
 # experiments/run_experiments.py
 """Main script to run all compression experiments."""
 
+import argparse
 import os
 import sys
 import yaml
@@ -126,9 +127,9 @@ class CompressionExperimentRunner:
                     f"{model_name}_predictive_masking",
                 )
                 compressor.save_model(model_path)
+
         for masking_prob in self.config["compression"]["masking_probabilities"]:
             self.logger.info(f"Testing masking probability: {masking_prob}")
-
             prob_results = {
                 "compression_ratio": [],
                 "word_accuracy": [],
@@ -140,6 +141,7 @@ class CompressionExperimentRunner:
                 "bert_score_f1": [],
                 "bits_per_character": [],
             }
+
             for run in range(self.config["experiment"]["num_runs"]):
                 run_metrics = []
                 for text in tqdm(
@@ -155,7 +157,6 @@ class CompressionExperimentRunner:
                             text, reconstructed, compressed
                         )
                         run_metrics.append(metrics)
-
                     except Exception as e:
                         self.logger.error(f"Error processing text: {e}")
                         continue
@@ -167,7 +168,6 @@ class CompressionExperimentRunner:
             results[masking_prob] = {
                 key: np.mean(values) for key, values in prob_results.items()
             }
-
             if self.config["evaluation"]["save_reconstructions"]:
                 examples = []
                 for i in range(min(3, len(test_texts))):
@@ -191,13 +191,11 @@ class CompressionExperimentRunner:
         self, model_name: str, train_texts: List[str], test_texts: List[str]
     ) -> Dict:
         results = {}
-
         compressor = LatentSpaceQuantizationCompressor(
             model_name=model_name,
             device=self.config["experiment"]["device"],
             quantization_bits=self.config["compression"]["quantization_bits"],
         )
-
         self.logger.info(f"Training decoder for {model_name}...")
         compressor.train_decoder(
             texts=train_texts[:500],
@@ -226,13 +224,10 @@ class CompressionExperimentRunner:
                     compressed = compressor.compress(
                         text, quantization_bits=quantization_bits
                     )
-
                     reconstructed = compressor.decompress(compressed)
-
                     metrics = self.metrics_calculator.calculate_all_metrics(
                         text, reconstructed, compressed
                     )
-
                     for key in prob_results:
                         prob_results[key].append(metrics.get(key, 0))
 
@@ -307,15 +302,13 @@ class CompressionExperimentRunner:
             self.visualizer.create_summary_report(
                 lsq_results, "latent_space_quantization"
             )
+
         self.visualizer.plot_compression_vs_accuracy(results, "all_methods_comparison")
 
         self.logger.info("All visualizations created!")
 
 
 def main():
-    """Main entry point."""
-    import argparse
-
     parser = argparse.ArgumentParser(description="Run LLM compression experiments")
     parser.add_argument(
         "--config",
@@ -332,10 +325,32 @@ def main():
         default="both",
         help="Compression method to use",
     )
+    parser.add_argument(
+        "--experiment",
+        choices=["1a", "1b", "both"],
+        default="1a",
+        help="Which experiment to run",
+    )
+    parser.add_argument(
+        "--probe-source",
+        type=str,
+        default="mixed",
+        choices=["wikitext", "lama", "mixed"],
+        help="Source for factual probes (for experiment 1b)",
+    )
 
     args = parser.parse_args()
-    runner = CompressionExperimentRunner(args.config)
-    runner.run_all_experiments()
+    if args.experiment in ["1a", "both"]:
+        print("Running Experiment 1A: Text Compression...")
+        runner = CompressionExperimentRunner(args.config)
+        runner.run_all_experiments()
+
+    if args.experiment in ["1b", "both"]:
+        print("\nRunning Experiment 1B: Knowledge Compression...")
+        from run_experiment_1b import Experiment1BRunner
+
+        runner_1b = Experiment1BRunner(args.config)
+        runner_1b.run_knowledge_compression_analysis(probe_source=args.probe_source)
 
 
 if __name__ == "__main__":

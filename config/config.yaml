@@ -16,7 +16,7 @@ compression:
   masking_probabilities: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]
   quantization_bits: 8
   batch_size: 16
-  
+
 training:
   epochs: 50
   learning_rate: 5e-5
@@ -24,14 +24,14 @@ training:
   weight_decay: 0.01
   gradient_accumulation_steps: 2
   fp16: true
-  
+
 data:
   train_size: 10000
   test_size: 1000
   max_length: 256
   dataset_name: "wikitext"
   dataset_config: "wikitext-2-raw-v1"
-  
+
 evaluation:
   metrics:
     - "reconstruction_accuracy"
@@ -40,7 +40,7 @@ evaluation:
     - "bert_score"
     - "semantic_similarity"
   save_reconstructions: true
-  
+
 experiment:
   seed: 42
   num_runs: 3
@@ -48,9 +48,23 @@ experiment:
   output_dir: "./results"
   save_models: true
   logging_steps: 100
-  
+
 visualization:
   figure_format: "png"
   dpi: 300
   style: "seaborn-v0_8-darkgrid"
   save_figures: true
+
+experiment_1b:
+  corpus_size: 5000
+  test_size: 500
+  factual_probes: 1000
+  oracle_model: "gpt2-large"
+
+  tolerance_thresholds:
+    high_fidelity_factual: 0.95
+    creative_reasoning: 0.85
+    acceptable_degradation: 0.10
+
+  fine_tune_sizes: [10, 50, 100, 500, 1000, 5000]
+  target_performance: 0.80

@@ -1,0 +1,1175 @@
+{
+  "bert-base-uncased_predictive_masking": {
+    "0.1": {
+      "compression_ratio": 1.2037587435445378,
+      "word_accuracy": 0.19600212191934205,
+      "character_accuracy": 0.2765352575193592,
+      "semantic_similarity": 0.9695207621653874,
+      "rouge1_fmeasure": 0.9440501975555842,
+      "rouge2_fmeasure": 0.8928520589669978,
+      "rougeL_fmeasure": 0.943585426124195,
+      "bert_score_f1": 0.9468336778879166,
+      "bits_per_character": 6.815557620890426,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "credits adapted from take from home ' s liner notes.",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.1
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "r ( et ) c = o + nh3 + h2o2 = me ( et ) conh + h2o",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.1
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = final storylines and departure ( 2004 ) = = = =",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.1
+        }
+      ]
+    },
+    "0.2": {
+      "compression_ratio": 1.3218075625861632,
+      "word_accuracy": 0.18079021211504395,
+      "character_accuracy": 0.22938772344562994,
+      "semantic_similarity": 0.9210904028018315,
+      "rouge1_fmeasure": 0.8789654265499524,
+      "rouge2_fmeasure": 0.7752618126700465,
+      "rougeL_fmeasure": 0.87707790121932,
+      "bert_score_f1": 0.935154978632927,
+      "bits_per_character": 6.230004019987894,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "credits adapted from take back home ' s liner notes.",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.2
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "me ( et ) c = o = nh3 + fe2o2 \u2192 me ( et ) conh + ch2o",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.2
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = final storylines and departure ( 2004 ) = = = =",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.2
+        }
+      ]
+    },
+    "0.3": {
+      "compression_ratio": 1.4560939892058353,
+      "word_accuracy": 0.1616686545642285,
+      "character_accuracy": 0.19986114582714976,
+      "semantic_similarity": 0.8761755234003067,
+      "rouge1_fmeasure": 0.803203475045635,
+      "rouge2_fmeasure": 0.6530048527392068,
+      "rougeL_fmeasure": 0.797935867399208,
+      "bert_score_f1": 0.9206821997960408,
+      "bits_per_character": 5.661015420038173,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "credits adapted from back @ home ' s liner notes.",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.3
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "me ( et ) = = o + nh2 + h2o = = me ( et ) conh = h2o",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.3
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = final storylines and departure ( unspecified ) = = = =",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.3
+        }
+      ]
+    },
+    "0.4": {
+      "compression_ratio": 1.6265772800548755,
+      "word_accuracy": 0.1412947991745358,
+      "character_accuracy": 0.153225020090385,
+      "semantic_similarity": 0.8113983978827793,
+      "rouge1_fmeasure": 0.7210039331369114,
+      "rouge2_fmeasure": 0.5196071868592198,
+      "rougeL_fmeasure": 0.7079580841927083,
+      "bert_score_f1": 0.9037328801552454,
+      "bits_per_character": 5.071738092169706,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "credits adapted from back @ home ' s liner notes.",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.4
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "me (ac ) c = o2 (h + h2o = = = ( et ) conh + h2o",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.4
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = and the storylines and departure ( = ) = = = =",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.4
+        }
+      ]
+    },
+    "0.5": {
+      "compression_ratio": 1.826651724988649,
+      "word_accuracy": 0.12246650510588138,
+      "character_accuracy": 0.13591071082040887,
+      "semantic_similarity": 0.754538218875726,
+      "rouge1_fmeasure": 0.6472707761001731,
+      "rouge2_fmeasure": 0.4190939284988247,
+      "rougeL_fmeasure": 0.6274684796628981,
+      "bert_score_f1": 0.8849858421087266,
+      "bits_per_character": 4.528739620409792,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "credits adapted from take me home ' s liner notes.",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.5
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "mehler et. c = 2006 = nh3 = h2o2, (12 ) conh = h2o",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.5
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = final step and departure to = ) = = = =",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.5
+        }
+      ]
+    },
+    "0.6": {
+      "compression_ratio": 2.1145229604634967,
+      "word_accuracy": 0.10775156609263488,
+      "character_accuracy": 0.10708103371359691,
+      "semantic_similarity": 0.6639970702926318,
+      "rouge1_fmeasure": 0.5505388696576623,
+      "rouge2_fmeasure": 0.29506401143448646,
+      "rougeL_fmeasure": 0.5172464369403295,
+      "bert_score_f1": 0.860301411151886,
+      "bits_per_character": 3.9287198045824336,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "credits adapted from lend meme ' s liner notes.",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.6
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "o ( et ) = = o2 r3 = h2o2 \u2192 me ( et )2h2 =2o",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.6
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = = = = = = = ) = = = =",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.6
+        }
+      ]
+    },
+    "0.7": {
+      "compression_ratio": 2.480211514775253,
+      "word_accuracy": 0.07410187946683651,
+      "character_accuracy": 0.08681402997758585,
+      "semantic_similarity": 0.5556700898458561,
+      "rouge1_fmeasure": 0.4451903524999146,
+      "rouge2_fmeasure": 0.1832167748065656,
+      "rougeL_fmeasure": 0.40661942572282755,
+      "bert_score_f1": 0.8345144806305568,
+      "bits_per_character": 3.343314398525502,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "credits adapted from take me home : s liner notes :",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.7
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "me = = ( ) = o + nh2 + h = o2 = me ( et. conf = = = =",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.7
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = = = 2006 2001 \u2013 2004 = = = = =",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.7
+        }
+      ]
+    },
+    "0.8": {
+      "compression_ratio": 2.992171439360368,
+      "word_accuracy": 0.057318556965707805,
+      "character_accuracy": 0.07159599031641209,
+      "semantic_similarity": 0.4160416230668003,
+      "rouge1_fmeasure": 0.35752089642775636,
+      "rouge2_fmeasure": 0.10810851936463296,
+      "rougeL_fmeasure": 0.31500349708353376,
+      "bert_score_f1": 0.8025867615143459,
+      "bits_per_character": 2.7823156257614485,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "the angel you take me home, the liner notes ;",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.8
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "= = et = = = = = = = + r2 = = = = ( eth. = = = = =",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.8
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = final, = = = = = = = = =",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.8
+        }
+      ]
+    },
+    "0.9": {
+      "compression_ratio": 3.79419844208817,
+      "word_accuracy": 0.03443181791482374,
+      "character_accuracy": 0.05460682659046832,
+      "semantic_similarity": 0.25340480885934086,
+      "rouge1_fmeasure": 0.24631926288485392,
+      "rouge2_fmeasure": 0.045986186800283296,
+      "rougeL_fmeasure": 0.21368490475359062,
+      "bert_score_f1": 0.7664836255709332,
+      "bits_per_character": 2.1953903952375327,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "the the \" \", \",.,,.",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.9
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "the \" and \" \" \" \" \"n \" \" \" \" \" \" \" \" \" \" \" \" \" the \" \" \"",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.9
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = = = 2006 2001 \u2013 2004 \u2013 = = = =",
+          "model": "bert-base-uncased",
+          "masking_prob": 0.9
+        }
+      ]
+    }
+  },
+  "bert-base-uncased_lsq": {
+    "0.1": {
+      "compression_ratio": 0.0033051250666462535,
+      "word_accuracy": 0.08606739113056074,
+      "character_accuracy": 0.0937671530122058,
+      "semantic_similarity": 0.44857362523674965,
+      "rouge1_fmeasure": 0.5268143129835683,
+      "rouge2_fmeasure": 0.2665972890351707,
+      "rougeL_fmeasure": 0.5232934053452832,
+      "bert_score_f1": 0.8570530384778976,
+      "bits_per_character": 2479.764684055383,
+      "quantization_bits": 14
+    },
+    "0.2": {
+      "compression_ratio": 0.003559331062376665,
+      "word_accuracy": 0.08606739113056074,
+      "character_accuracy": 0.09401039093237387,
+      "semantic_similarity": 0.44904129788279534,
+      "rouge1_fmeasure": 0.5270010218443278,
+      "rouge2_fmeasure": 0.26683038926827096,
+      "rougeL_fmeasure": 0.5234801142060427,
+      "bert_score_f1": 0.8570582967996597,
+      "bits_per_character": 2302.6618596350013,
+      "quantization_bits": 13
+    },
+    "0.3": {
+      "compression_ratio": 0.004206378702726018,
+      "word_accuracy": 0.08627572446389406,
+      "character_accuracy": 0.0934079603768183,
+      "semantic_similarity": 0.44821427270770076,
+      "rouge1_fmeasure": 0.5270640466603232,
+      "rouge2_fmeasure": 0.267090174312209,
+      "rougeL_fmeasure": 0.5235431390220381,
+      "bert_score_f1": 0.8570741617679596,
+      "bits_per_character": 1948.456210794238,
+      "quantization_bits": 11
+    },
+    "0.4": {
+      "compression_ratio": 0.004626942601450598,
+      "word_accuracy": 0.0866871619189254,
+      "character_accuracy": 0.09272654369302202,
+      "semantic_similarity": 0.44908295437693596,
+      "rouge1_fmeasure": 0.5269704482420349,
+      "rouge2_fmeasure": 0.26680931875188174,
+      "rougeL_fmeasure": 0.5234433677642437,
+      "bert_score_f1": 0.8569971793889999,
+      "bits_per_character": 1771.3533863738564,
+      "quantization_bits": 10
+    },
+    "0.5": {
+      "compression_ratio": 0.005140946884167966,
+      "word_accuracy": 0.08612315120825817,
+      "character_accuracy": 0.09085679745406279,
+      "semantic_similarity": 0.4497058878839016,
+      "rouge1_fmeasure": 0.5264057132536945,
+      "rouge2_fmeasure": 0.26613480045160864,
+      "rougeL_fmeasure": 0.522882416699977,
+      "bert_score_f1": 0.8568082922697067,
+      "bits_per_character": 1594.2505619534745,
+      "quantization_bits": 9
+    },
+    "0.6": {
+      "compression_ratio": 0.006609419882591968,
+      "word_accuracy": 0.09208130421128745,
+      "character_accuracy": 0.09316930396615726,
+      "semantic_similarity": 0.44689661502838135,
+      "rouge1_fmeasure": 0.5278961747914475,
+      "rouge2_fmeasure": 0.2683903921652926,
+      "rougeL_fmeasure": 0.5243800054717009,
+      "bert_score_f1": 0.8575568407773971,
+      "bits_per_character": 1240.0449131127111,
+      "quantization_bits": 7
+    },
+    "0.7": {
+      "compression_ratio": 0.007710667054583798,
+      "word_accuracy": 0.09745285031600266,
+      "character_accuracy": 0.0891024956626885,
+      "semantic_similarity": 0.4493941816687584,
+      "rouge1_fmeasure": 0.5263206846392084,
+      "rouge2_fmeasure": 0.26744706828256876,
+      "rougeL_fmeasure": 0.522773962284099,
+      "bert_score_f1": 0.8577590757608413,
+      "bits_per_character": 1062.9420886923294,
+      "quantization_bits": 6
+    },
+    "0.8": {
+      "compression_ratio": 0.011564306232080657,
+      "word_accuracy": 0.09046613766823863,
+      "character_accuracy": 0.09522828991922423,
+      "semantic_similarity": 0.4292750300467014,
+      "rouge1_fmeasure": 0.5069810887184976,
+      "rouge2_fmeasure": 0.24394668104198378,
+      "rougeL_fmeasure": 0.5043072372959222,
+      "bert_score_f1": 0.850995677113533,
+      "bits_per_character": 708.736439851566,
+      "quantization_bits": 4
+    },
+    "0.9": {
+      "compression_ratio": 0.015416816660833377,
+      "word_accuracy": 0.059307492938345696,
+      "character_accuracy": 0.070871292959472,
+      "semantic_similarity": 0.35672610336914656,
+      "rouge1_fmeasure": 0.443610875521412,
+      "rouge2_fmeasure": 0.1718323143104418,
+      "rougeL_fmeasure": 0.4340005367774329,
+      "bert_score_f1": 0.8262681657075882,
+      "bits_per_character": 531.6336154311845,
+      "quantization_bits": 3
+    }
+  },
+  "roberta-base_predictive_masking": {
+    "0.1": {
+      "compression_ratio": 1.1791223554240424,
+      "word_accuracy": 0.9172418318691419,
+      "character_accuracy": 0.5422454094402576,
+      "semantic_similarity": 0.9604344058036803,
+      "rouge1_fmeasure": 0.9444869175197873,
+      "rouge2_fmeasure": 0.8910188120622503,
+      "rougeL_fmeasure": 0.9441715066546413,
+      "bert_score_f1": 0.988197724421819,
+      "bits_per_character": 6.958449879182662,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "Credits adapted from Take Me Home 's liner notes .",
+          "model": "roberta-base",
+          "masking_prob": 0.1
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "Me ( Et ) C = O + NH2 + H2O2 \u2192 Me ( C ) CONH + H2O",
+          "model": "roberta-base",
+          "masking_prob": 0.1
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "model": "roberta-base",
+          "masking_prob": 0.1
+        }
+      ]
+    },
+    "0.2": {
+      "compression_ratio": 1.292465819031783,
+      "word_accuracy": 0.7861764644745942,
+      "character_accuracy": 0.346534489137506,
+      "semantic_similarity": 0.9163125602404275,
+      "rouge1_fmeasure": 0.8830290126203743,
+      "rouge2_fmeasure": 0.7848252936348578,
+      "rougeL_fmeasure": 0.8818610745210859,
+      "bert_score_f1": 0.9742922321955363,
+      "bits_per_character": 6.35106457286884,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "Credits adapted from Take Me Home 's liner notes .",
+          "model": "roberta-base",
+          "masking_prob": 0.2
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "Me ( Et ) C = O + NH3 + H = H2 \u2192 Me ( Et ) CONH + H2 )",
+          "model": "roberta-base",
+          "masking_prob": 0.2
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "model": "roberta-base",
+          "masking_prob": 0.2
+        }
+      ]
+    },
+    "0.3": {
+      "compression_ratio": 1.4281398354715986,
+      "word_accuracy": 0.6666179327219194,
+      "character_accuracy": 0.255474063114927,
+      "semantic_similarity": 0.8525475033124287,
+      "rouge1_fmeasure": 0.8172117304724668,
+      "rouge2_fmeasure": 0.6713648017116981,
+      "rougeL_fmeasure": 0.811752695730226,
+      "bert_score_f1": 0.9557304080327351,
+      "bits_per_character": 5.785506289568235,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "A also of \" Go Home 's liner notes .",
+          "model": "roberta-base",
+          "masking_prob": 0.3
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "Me ( i ) CED2 + NH3 + H2O2 = Me ( Et ) CONH + H2O",
+          "model": "roberta-base",
+          "masking_prob": 0.3
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = Final storylines and hiatus ( 2004 ) = = = =",
+          "model": "roberta-base",
+          "masking_prob": 0.3
+        }
+      ]
+    },
+    "0.4": {
+      "compression_ratio": 1.5871017795891877,
+      "word_accuracy": 0.4712529319985701,
+      "character_accuracy": 0.1877003962329333,
+      "semantic_similarity": 0.7875742897391319,
+      "rouge1_fmeasure": 0.7301933835468263,
+      "rouge2_fmeasure": 0.5361640696130235,
+      "rougeL_fmeasure": 0.719166407722586,
+      "bert_score_f1": 0.9338906443119049,
+      "bits_per_character": 5.206814703464361,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "Credits adapted from Takej ' 's liner notes .",
+          "model": "roberta-base",
+          "masking_prob": 0.4
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "= ( Et = C = H + NH3 = H2O = = = ( Et = CONH + H2O",
+          "model": "roberta-base",
+          "masking_prob": 0.4
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = Final season and departure ( 2004 ) = = = =",
+          "model": "roberta-base",
+          "masking_prob": 0.4
+        }
+      ]
+    },
+    "0.5": {
+      "compression_ratio": 1.7923502455027187,
+      "word_accuracy": 0.3637084092160235,
+      "character_accuracy": 0.14280497771333456,
+      "semantic_similarity": 0.7197074398398399,
+      "rouge1_fmeasure": 0.6473139302609794,
+      "rouge2_fmeasure": 0.4200542526279722,
+      "rougeL_fmeasure": 0.6310044568285376,
+      "bert_score_f1": 0.9116809312502543,
+      "bits_per_character": 4.629257701417033,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "A selections from Take Me Home ' - liner notes :",
+          "model": "roberta-base",
+          "masking_prob": 0.5
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "Me = Et ) C = = = NH3 = H2 R2 \u2192 H ( H = CONDS = H2 )",
+          "model": "roberta-base",
+          "masking_prob": 0.5
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = = = his departure ( = = = = = =",
+          "model": "roberta-base",
+          "masking_prob": 0.5
+        }
+      ]
+    },
+    "0.6": {
+      "compression_ratio": 2.073350865955909,
+      "word_accuracy": 0.23835410727992282,
+      "character_accuracy": 0.11944901420295397,
+      "semantic_similarity": 0.6360361211995283,
+      "rouge1_fmeasure": 0.5522004230455638,
+      "rouge2_fmeasure": 0.29833679111629197,
+      "rougeL_fmeasure": 0.521768473401751,
+      "bert_score_f1": 0.8816979185740154,
+      "bits_per_character": 3.996132023676713,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "Credits adapted from the by by by by , , )",
+          "model": "roberta-base",
+          "masking_prob": 0.6
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "Me = = ) = = = = R3 = H2O ) \u2192 H = = = CONNECT + H2O",
+          "model": "roberta-base",
+          "masking_prob": 0.6
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = First : retirement and departure ( ] ) = = = =",
+          "model": "roberta-base",
+          "masking_prob": 0.6
+        }
+      ]
+    },
+    "0.7": {
+      "compression_ratio": 2.4253624408327723,
+      "word_accuracy": 0.16426413542745433,
+      "character_accuracy": 0.09822614139154633,
+      "semantic_similarity": 0.5147511502479514,
+      "rouge1_fmeasure": 0.45033124445280864,
+      "rouge2_fmeasure": 0.1920080346841274,
+      "rougeL_fmeasure": 0.41446898513639296,
+      "bert_score_f1": 0.8489854778846105,
+      "bits_per_character": 3.4210127818598917,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "Works adapted from the the novel 's novel novel .",
+          "model": "roberta-base",
+          "masking_prob": 0.7
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "( = Et ) = = H + NH = = = XO2 = Me ( = = CON =@O2 =",
+          "model": "roberta-base",
+          "masking_prob": 0.7
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = Final season , departure , 2004 ) = = = =",
+          "model": "roberta-base",
+          "masking_prob": 0.7
+        }
+      ]
+    },
+    "0.8": {
+      "compression_ratio": 2.933312230219068,
+      "word_accuracy": 0.11065573771617727,
+      "character_accuracy": 0.08474762583242108,
+      "semantic_similarity": 0.36141299168424057,
+      "rouge1_fmeasure": 0.34506507792221147,
+      "rouge2_fmeasure": 0.10353231197696944,
+      "rougeL_fmeasure": 0.30686545625013933,
+      "bert_score_f1": 0.8151002351442974,
+      "bits_per_character": 2.8376648560779043,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "Credits adapted from the the of the and for ) :",
+          "model": "roberta-base",
+          "masking_prob": 0.8
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "= = = = = = = + = = = = = = = , Meets , = = = = = = ]",
+          "model": "roberta-base",
+          "masking_prob": 0.8
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = Final run and the = = = = = = =",
+          "model": "roberta-base",
+          "masking_prob": 0.8
+        }
+      ]
+    },
+    "0.9": {
+      "compression_ratio": 3.704926663336321,
+      "word_accuracy": 0.0696433614562695,
+      "character_accuracy": 0.07271317129391286,
+      "semantic_similarity": 0.205693540526554,
+      "rouge1_fmeasure": 0.23379820291202016,
+      "rouge2_fmeasure": 0.041841128910381935,
+      "rougeL_fmeasure": 0.20208496919510363,
+      "bert_score_f1": 0.7755378262201944,
+      "bits_per_character": 2.2478848941678753,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "Credits adapted from the album album the the the video .",
+          "model": "roberta-base",
+          "masking_prob": 0.9
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "= = = = = = = = = = = = = = = = = = = = = = = = = =",
+          "model": "roberta-base",
+          "masking_prob": 0.9
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = = = = ] ( 2004 ) 2006 = = =",
+          "model": "roberta-base",
+          "masking_prob": 0.9
+        }
+      ]
+    }
+  },
+  "roberta-base_lsq": {
+    "0.1": {
+      "compression_ratio": 0.0032402110464150465,
+      "word_accuracy": 0.34826679506571423,
+      "character_accuracy": 0.09782140650136789,
+      "semantic_similarity": 0.4233500252664089,
+      "rouge1_fmeasure": 0.5587495925240011,
+      "rouge2_fmeasure": 0.3153945237881734,
+      "rougeL_fmeasure": 0.5568247530312557,
+      "bert_score_f1": 0.8805519318580628,
+      "bits_per_character": 2528.6524692165417,
+      "quantization_bits": 14
+    },
+    "0.2": {
+      "compression_ratio": 0.003489425108347979,
+      "word_accuracy": 0.3481604120869908,
+      "character_accuracy": 0.09826356964371527,
+      "semantic_similarity": 0.422642073482275,
+      "rouge1_fmeasure": 0.5587495925240011,
+      "rouge2_fmeasure": 0.3153945237881734,
+      "rougeL_fmeasure": 0.5568247530312557,
+      "bert_score_f1": 0.8805124920606613,
+      "bits_per_character": 2348.057660141791,
+      "quantization_bits": 13
+    },
+    "0.3": {
+      "compression_ratio": 0.004123766944046547,
+      "word_accuracy": 0.34790549122878345,
+      "character_accuracy": 0.09561780083753209,
+      "semantic_similarity": 0.42472930774092676,
+      "rouge1_fmeasure": 0.5586576377874816,
+      "rouge2_fmeasure": 0.31511920627557105,
+      "rougeL_fmeasure": 0.5567327982947361,
+      "bert_score_f1": 0.8805697399377823,
+      "bits_per_character": 1986.8680419922907,
+      "quantization_bits": 11
+    },
+    "0.4": {
+      "compression_ratio": 0.0045360727903334935,
+      "word_accuracy": 0.34781579577613436,
+      "character_accuracy": 0.09834116298024316,
+      "semantic_similarity": 0.42695115178823473,
+      "rouge1_fmeasure": 0.5588227578225203,
+      "rouge2_fmeasure": 0.3152093908922496,
+      "rougeL_fmeasure": 0.5568979183297749,
+      "bert_score_f1": 0.8807741987705231,
+      "bits_per_character": 1806.2732329175406,
+      "quantization_bits": 10
+    },
+    "0.5": {
+      "compression_ratio": 0.005039984668747988,
+      "word_accuracy": 0.34578926165095525,
+      "character_accuracy": 0.09618297680412105,
+      "semantic_similarity": 0.4240140884369612,
+      "rouge1_fmeasure": 0.5585184980783041,
+      "rouge2_fmeasure": 0.3144960762446922,
+      "rougeL_fmeasure": 0.5563339183258182,
+      "bert_score_f1": 0.8804443955421448,
+      "bits_per_character": 1625.6784238427904,
+      "quantization_bits": 9
+    },
+    "0.6": {
+      "compression_ratio": 0.006479626897994071,
+      "word_accuracy": 0.3172940061337681,
+      "character_accuracy": 0.10002885383797683,
+      "semantic_similarity": 0.41611544534564016,
+      "rouge1_fmeasure": 0.5535674763124682,
+      "rouge2_fmeasure": 0.30895111007838616,
+      "rougeL_fmeasure": 0.5514241957206252,
+      "bert_score_f1": 0.8787163311243057,
+      "bits_per_character": 1264.4888056932903,
+      "quantization_bits": 7
+    },
+    "0.7": {
+      "compression_ratio": 0.007559255533895148,
+      "word_accuracy": 0.32432970566772995,
+      "character_accuracy": 0.09853814026106975,
+      "semantic_similarity": 0.4159389364719391,
+      "rouge1_fmeasure": 0.5503148690597215,
+      "rouge2_fmeasure": 0.30348506469638,
+      "rougeL_fmeasure": 0.5493141288424807,
+      "bert_score_f1": 0.8756166219711303,
+      "bits_per_character": 1083.8939966185403,
+      "quantization_bits": 6
+    },
+    "0.8": {
+      "compression_ratio": 0.011337260469606224,
+      "word_accuracy": 0.10725077845836402,
+      "character_accuracy": 0.06993487307336814,
+      "semantic_similarity": 0.1866093573346734,
+      "rouge1_fmeasure": 0.3183365018218362,
+      "rouge2_fmeasure": 0.11828165711642122,
+      "rougeL_fmeasure": 0.31309815551404996,
+      "bert_score_f1": 0.8090164679288864,
+      "bits_per_character": 722.70437846904,
+      "quantization_bits": 4
+    },
+    "0.9": {
+      "compression_ratio": 0.015114184276576719,
+      "word_accuracy": 0.004066964021238602,
+      "character_accuracy": 0.04915988900583228,
+      "semantic_similarity": 0.04761965866200626,
+      "rouge1_fmeasure": 0.02481350817189148,
+      "rouge2_fmeasure": 0.0016649205517723065,
+      "rougeL_fmeasure": 0.0239216806061462,
+      "bert_score_f1": 0.7462939405441285,
+      "bits_per_character": 542.1095693942898,
+      "quantization_bits": 3
+    }
+  },
+  "distilbert-base-uncased_predictive_masking": {
+    "0.1": {
+      "compression_ratio": 1.2037587435445378,
+      "word_accuracy": 0.19348362214258685,
+      "character_accuracy": 0.2839068090684021,
+      "semantic_similarity": 0.9661317183574041,
+      "rouge1_fmeasure": 0.9392202720863883,
+      "rouge2_fmeasure": 0.8839649330163754,
+      "rougeL_fmeasure": 0.9388388516267799,
+      "bert_score_f1": 0.9454456013441085,
+      "bits_per_character": 6.815557620890426,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "credits adapted from take the home ' s liner notes.",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.1
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "me ( et ) c = o + nh3 + h2o2 = me ( et ) conh + h2o",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.1
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = final storylines and departure ( 2004 ) = = = =",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.1
+        }
+      ]
+    },
+    "0.2": {
+      "compression_ratio": 1.3218075625861632,
+      "word_accuracy": 0.16870741189187424,
+      "character_accuracy": 0.2192602911835376,
+      "semantic_similarity": 0.9171131685376168,
+      "rouge1_fmeasure": 0.8679613808527815,
+      "rouge2_fmeasure": 0.7543288050350924,
+      "rougeL_fmeasure": 0.865429332208194,
+      "bert_score_f1": 0.9319201376040777,
+      "bits_per_character": 6.230004019987894,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "credits adapted from take @ home ' s liner notes.",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.2
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "me ( et ) c = o = nh3 + h0o2 \u2192 me ( n ) conh + nh2o",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.2
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = final storylines and departure ( 2004 ) = = = =",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.2
+        }
+      ]
+    },
+    "0.3": {
+      "compression_ratio": 1.4560939892058353,
+      "word_accuracy": 0.15941922890166435,
+      "character_accuracy": 0.19170430162749438,
+      "semantic_similarity": 0.8706235234936078,
+      "rouge1_fmeasure": 0.7931697868921471,
+      "rouge2_fmeasure": 0.6300070134952166,
+      "rougeL_fmeasure": 0.7858182437532976,
+      "bert_score_f1": 0.9169383736451467,
+      "bits_per_character": 5.661015420038173,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "credits adapted from a @ home ' s liner notes.",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.3
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "me ( et ) = = o + nh2 + h2o = = me ( et ) conh = h2o",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.3
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = final storylines and departure ( 2008 ) = = = =",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.3
+        }
+      ]
+    },
+    "0.4": {
+      "compression_ratio": 1.6265772800548755,
+      "word_accuracy": 0.1463893326479004,
+      "character_accuracy": 0.15000802906864938,
+      "semantic_similarity": 0.8094391505916914,
+      "rouge1_fmeasure": 0.7110773485447983,
+      "rouge2_fmeasure": 0.4978249386349551,
+      "rougeL_fmeasure": 0.6956050674855535,
+      "bert_score_f1": 0.9001290160417557,
+      "bits_per_character": 5.071738092169706,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "credits adapted from the @ home ' s liner notes.",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.4
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "me ( = ) c = o = rh + h2o = = = ( et ) conh + h2o",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.4
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = return : storylines and departure ( 2007 ) = = = =",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.4
+        }
+      ]
+    },
+    "0.5": {
+      "compression_ratio": 1.826651724988649,
+      "word_accuracy": 0.12087829808496768,
+      "character_accuracy": 0.136638751935542,
+      "semantic_similarity": 0.7503115224838256,
+      "rouge1_fmeasure": 0.6408684387330509,
+      "rouge2_fmeasure": 0.3987519803973925,
+      "rougeL_fmeasure": 0.6180845669245555,
+      "bert_score_f1": 0.8808290235201518,
+      "bits_per_character": 4.528739620409792,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "credits adapted from take me home ' s liner notes.",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.5
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "me @ et. c22 = nh3 = h2o2, h h2 ) conh = h2o",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.5
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = final cut ( departure of 2006 ) = = = =",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.5
+        }
+      ]
+    },
+    "0.6": {
+      "compression_ratio": 2.1145229604634967,
+      "word_accuracy": 0.10387006037639486,
+      "character_accuracy": 0.10400392110809835,
+      "semantic_similarity": 0.6601983328660329,
+      "rouge1_fmeasure": 0.5513253887709156,
+      "rouge2_fmeasure": 0.28312141466701246,
+      "rougeL_fmeasure": 0.5161010075715429,
+      "bert_score_f1": 0.8570948058366775,
+      "bits_per_character": 3.9287198045824336,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "credits adapted from make me down ' s liner notes.",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.6
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "h ( et ) = = o = r3 \u2192 h2o2 \u2192 me ( e )2h = h2o",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.6
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = first ( = = (, \u2013 2006 ) = = = =",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.6
+        }
+      ]
+    },
+    "0.7": {
+      "compression_ratio": 2.480211514775253,
+      "word_accuracy": 0.059470885028863905,
+      "character_accuracy": 0.08429985909562342,
+      "semantic_similarity": 0.5560411734879017,
+      "rouge1_fmeasure": 0.4526783614966325,
+      "rouge2_fmeasure": 0.1776472404302966,
+      "rougeL_fmeasure": 0.4085242511366028,
+      "bert_score_f1": 0.8330094369252522,
+      "bits_per_character": 3.343314398525502,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "credits adapted from take me home album album liner notes :",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.7
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "me = = =1 = o + nh2 + h = h2 = me ( et = confes = = =",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.7
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = new new through through 2006 \u2013 2004 ) = = = =",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.7
+        }
+      ]
+    },
+    "0.8": {
+      "compression_ratio": 2.992171439360368,
+      "word_accuracy": 0.039117407918707436,
+      "character_accuracy": 0.0612531975619677,
+      "semantic_similarity": 0.4348672312311828,
+      "rouge1_fmeasure": 0.3584125785242498,
+      "rouge2_fmeasure": 0.10173872634994328,
+      "rougeL_fmeasure": 0.31038142772498317,
+      "bert_score_f1": 0.8084055197238923,
+      "bits_per_character": 2.7823156257614485,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "\" = s send me home, the liner notes.",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.8
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "= = etym = = = = =1 + f2 = = = = ( etym = = = = = =",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.8
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = the final ( = = = = = = = = =",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.8
+        }
+      ]
+    },
+    "0.9": {
+      "compression_ratio": 3.79419844208817,
+      "word_accuracy": 0.008955951064230512,
+      "character_accuracy": 0.02523794491271864,
+      "semantic_similarity": 0.2879252093719939,
+      "rouge1_fmeasure": 0.22390627683081574,
+      "rouge2_fmeasure": 0.042963488180378984,
+      "rougeL_fmeasure": 0.18951986520081573,
+      "bert_score_f1": 0.7808397563298545,
+      "bits_per_character": 2.1953903952375327,
+      "examples": [
+        {
+          "original": "Credits adapted from Take Me Home 's liner notes .",
+          "reconstructed": "(,,,,,,,,,.",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.9
+        },
+        {
+          "original": "Me ( Et ) C = O + NH3 + H2O2 \u2192 Me ( Et ) CONH + H2O",
+          "reconstructed": "(,,,,,,,,,,,,,,,,,,,,,,,,,",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.9
+        },
+        {
+          "original": "= = = = Final storylines and departure ( 2004 ) = = = =",
+          "reconstructed": "= = = = = = japan 2006 ( 2004 \u2013 = = = =",
+          "model": "distilbert-base-uncased",
+          "masking_prob": 0.9
+        }
+      ]
+    }
+  },
+  "distilbert-base-uncased_lsq": {
+    "0.1": {
+      "compression_ratio": 0.0033051250666462535,
+      "word_accuracy": 0.09916464520865789,
+      "character_accuracy": 0.09317794789229766,
+      "semantic_similarity": 0.4500137047469616,
+      "rouge1_fmeasure": 0.5426731630584642,
+      "rouge2_fmeasure": 0.2770465453558559,
+      "rougeL_fmeasure": 0.5397915903768308,
+      "bert_score_f1": 0.860773246884346,
+      "bits_per_character": 2479.764684055383,
+      "quantization_bits": 14
+    },
+    "0.2": {
+      "compression_ratio": 0.003559331062376665,
+      "word_accuracy": 0.09916464520865789,
+      "character_accuracy": 0.09294357289229767,
+      "semantic_similarity": 0.4500355066359043,
+      "rouge1_fmeasure": 0.5426731630584642,
+      "rouge2_fmeasure": 0.2770465453558559,
+      "rougeL_fmeasure": 0.5397915903768308,
+      "bert_score_f1": 0.8609205597639084,
+      "bits_per_character": 2302.6618596350013,
+      "quantization_bits": 13
+    },
+    "0.3": {
+      "compression_ratio": 0.004206378702726018,
+      "word_accuracy": 0.09935695290096559,
+      "character_accuracy": 0.09317662124135427,
+      "semantic_similarity": 0.44913789466023446,
+      "rouge1_fmeasure": 0.5423751589744118,
+      "rouge2_fmeasure": 0.2767705183868297,
+      "rougeL_fmeasure": 0.5394935862927782,
+      "bert_score_f1": 0.8608591395616532,
+      "bits_per_character": 1948.456210794238,
+      "quantization_bits": 11
+    },
+    "0.4": {
+      "compression_ratio": 0.004626942601450598,
+      "word_accuracy": 0.09941717046118315,
+      "character_accuracy": 0.09261343312680761,
+      "semantic_similarity": 0.45038632102310655,
+      "rouge1_fmeasure": 0.5424906990137297,
+      "rouge2_fmeasure": 0.2770820349901462,
+      "rougeL_fmeasure": 0.5396123720315443,
+      "bert_score_f1": 0.8610838925838471,
+      "bits_per_character": 1771.3533863738564,
+      "quantization_bits": 10
+    },
+    "0.5": {
+      "compression_ratio": 0.005140946884167966,
+      "word_accuracy": 0.09724976176223114,
+      "character_accuracy": 0.08965850166561222,
+      "semantic_similarity": 0.44992504924535753,
+      "rouge1_fmeasure": 0.5429660424199475,
+      "rouge2_fmeasure": 0.2766482240287672,
+      "rougeL_fmeasure": 0.5396499712962495,
+      "bert_score_f1": 0.860916520357132,
+      "bits_per_character": 1594.2505619534745,
+      "quantization_bits": 9
+    },
+    "0.6": {
+      "compression_ratio": 0.006609419882591968,
+      "word_accuracy": 0.09926565015198775,
+      "character_accuracy": 0.09384268454141682,
+      "semantic_similarity": 0.451761890873313,
+      "rouge1_fmeasure": 0.5415358633881734,
+      "rouge2_fmeasure": 0.2769417262840668,
+      "rougeL_fmeasure": 0.5381962743329741,
+      "bert_score_f1": 0.8604849666357041,
+      "bits_per_character": 1240.0449131127111,
+      "quantization_bits": 7
+    },
+    "0.7": {
+      "compression_ratio": 0.007710667054583798,
+      "word_accuracy": 0.09791685436152442,
+      "character_accuracy": 0.09723678523691622,
+      "semantic_similarity": 0.45044243432581427,
+      "rouge1_fmeasure": 0.5409724679679514,
+      "rouge2_fmeasure": 0.2772811215119808,
+      "rougeL_fmeasure": 0.5376567140661082,
+      "bert_score_f1": 0.8604256856441498,
+      "bits_per_character": 1062.9420886923294,
+      "quantization_bits": 6
+    },
+    "0.8": {
+      "compression_ratio": 0.011564306232080657,
+      "word_accuracy": 0.0967552804789607,
+      "character_accuracy": 0.08538321436399629,
+      "semantic_similarity": 0.42259023904800413,
+      "rouge1_fmeasure": 0.51767779934602,
+      "rouge2_fmeasure": 0.24928885119628358,
+      "rougeL_fmeasure": 0.5125179889128099,
+      "bert_score_f1": 0.8514173394441604,
+      "bits_per_character": 708.736439851566,
+      "quantization_bits": 4
+    },
+    "0.9": {
+      "compression_ratio": 0.015416816660833377,
+      "word_accuracy": 0.08359457811159161,
+      "character_accuracy": 0.07989724171807727,
+      "semantic_similarity": 0.33630974888801574,
+      "rouge1_fmeasure": 0.44686908197567143,
+      "rouge2_fmeasure": 0.18510675756634093,
+      "rougeL_fmeasure": 0.43986653933355685,
+      "bert_score_f1": 0.8338516449928284,
+      "bits_per_character": 531.6336154311845,
+      "quantization_bits": 3
+    }
+  }
+}

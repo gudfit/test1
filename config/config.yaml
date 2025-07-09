@@ -18,7 +18,7 @@ compression:
   batch_size: 16
   
 training:
-  epochs: 10
+  epochs: 50
   learning_rate: 5e-5
   warmup_steps: 500
   weight_decay: 0.01

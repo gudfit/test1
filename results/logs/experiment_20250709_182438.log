@@ -1,0 +1,124 @@
+2025-07-09 18:24:38,308 - absl - INFO - Using default tokenizer.
+2025-07-09 18:24:39,584 - __main__ - INFO - Starting compression experiments...
+2025-07-09 18:24:39,584 - __main__ - INFO - Loading data...
+2025-07-09 18:24:44,124 - __main__ - INFO - 
+Running experiments for bert-base-uncased...
+2025-07-09 18:24:44,742 - __main__ - INFO - Fine-tuning bert-base-uncased...
+2025-07-09 18:30:06,136 - __main__ - INFO - Testing masking probability: 0.1
+2025-07-09 18:35:06,691 - __main__ - INFO - Testing masking probability: 0.2
+2025-07-09 18:39:46,015 - __main__ - INFO - Testing masking probability: 0.3
+2025-07-09 18:44:54,612 - __main__ - INFO - Testing masking probability: 0.4
+2025-07-09 18:49:57,951 - __main__ - INFO - Testing masking probability: 0.5
+2025-07-09 18:55:02,514 - __main__ - INFO - Testing masking probability: 0.6
+2025-07-09 18:59:55,636 - __main__ - INFO - Testing masking probability: 0.7
+2025-07-09 19:04:50,886 - __main__ - INFO - Testing masking probability: 0.8
+2025-07-09 19:04:56,598 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 19:04:56,599 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-07-09 19:04:57,614 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 19:04:57,614 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-07-09 19:04:59,630 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 19:04:59,630 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-07-09 19:09:52,040 - __main__ - INFO - Testing masking probability: 0.9
+2025-07-09 19:15:01,465 - __main__ - INFO - Training decoder for bert-base-uncased...
+2025-07-09 19:15:03,882 - __main__ - INFO - Testing 14-bit quantization
+2025-07-09 19:16:48,224 - __main__ - INFO - Testing 13-bit quantization
+2025-07-09 19:18:25,737 - __main__ - INFO - Testing 11-bit quantization
+2025-07-09 19:19:58,506 - __main__ - INFO - Testing 10-bit quantization
+2025-07-09 19:21:31,668 - __main__ - INFO - Testing 9-bit quantization
+2025-07-09 19:23:10,595 - __main__ - INFO - Testing 7-bit quantization
+2025-07-09 19:24:45,087 - __main__ - INFO - Testing 6-bit quantization
+2025-07-09 19:26:17,635 - __main__ - INFO - Testing 4-bit quantization
+2025-07-09 19:27:52,770 - __main__ - INFO - Testing 3-bit quantization
+2025-07-09 19:29:38,508 - __main__ - INFO - 
+Running experiments for roberta-base...
+2025-07-09 19:29:58,205 - __main__ - INFO - Fine-tuning roberta-base...
+2025-07-09 19:36:16,448 - __main__ - INFO - Testing masking probability: 0.1
+2025-07-09 19:40:56,492 - __main__ - INFO - Testing masking probability: 0.2
+2025-07-09 19:45:40,284 - __main__ - INFO - Testing masking probability: 0.3
+2025-07-09 19:50:32,762 - __main__ - INFO - Testing masking probability: 0.4
+2025-07-09 19:55:17,834 - __main__ - INFO - Testing masking probability: 0.5
+2025-07-09 20:00:11,333 - __main__ - INFO - Testing masking probability: 0.6
+2025-07-09 20:05:21,872 - __main__ - INFO - Testing masking probability: 0.7
+2025-07-09 20:10:13,483 - __main__ - INFO - Testing masking probability: 0.8
+2025-07-09 20:13:01,749 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 20:13:01,749 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-07-09 20:13:02,768 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 20:13:02,769 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-07-09 20:13:04,789 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 20:13:04,790 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-07-09 20:13:08,810 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 20:13:08,811 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-07-09 20:13:16,837 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 20:13:16,837 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-07-09 20:13:24,862 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 20:13:25,294 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/tokenizer_config.json
+2025-07-09 20:13:25,294 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-07-09 20:13:26,312 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/tokenizer_config.json
+2025-07-09 20:13:26,312 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-07-09 20:13:28,332 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/tokenizer_config.json
+2025-07-09 20:13:28,333 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-07-09 20:15:46,573 - __main__ - INFO - Testing masking probability: 0.9
+2025-07-09 20:20:35,674 - __main__ - INFO - Training decoder for roberta-base...
+2025-07-09 20:20:38,760 - __main__ - INFO - Testing 14-bit quantization
+2025-07-09 20:22:11,969 - __main__ - INFO - Testing 13-bit quantization
+2025-07-09 20:23:45,635 - __main__ - INFO - Testing 11-bit quantization
+2025-07-09 20:25:19,300 - __main__ - INFO - Testing 10-bit quantization
+2025-07-09 20:26:54,058 - __main__ - INFO - Testing 9-bit quantization
+2025-07-09 20:28:27,477 - __main__ - INFO - Testing 7-bit quantization
+2025-07-09 20:30:03,466 - __main__ - INFO - Testing 6-bit quantization
+2025-07-09 20:31:44,579 - __main__ - INFO - Testing 4-bit quantization
+2025-07-09 20:33:18,302 - __main__ - INFO - Testing 3-bit quantization
+2025-07-09 20:34:51,034 - __main__ - INFO - 
+Running experiments for distilbert-base-uncased...
+2025-07-09 20:34:55,884 - __main__ - INFO - Fine-tuning distilbert-base-uncased...
+2025-07-09 20:38:28,136 - __main__ - INFO - Testing masking probability: 0.1
+2025-07-09 20:43:08,628 - __main__ - INFO - Testing masking probability: 0.2
+2025-07-09 20:47:55,299 - __main__ - INFO - Testing masking probability: 0.3
+2025-07-09 20:52:35,129 - __main__ - INFO - Testing masking probability: 0.4
+2025-07-09 20:57:16,487 - __main__ - INFO - Testing masking probability: 0.5
+2025-07-09 20:59:31,780 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 20:59:31,781 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-07-09 20:59:32,809 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 20:59:32,809 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-07-09 20:59:34,838 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 20:59:34,838 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-07-09 20:59:38,871 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 20:59:38,871 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-07-09 20:59:46,898 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 20:59:46,899 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-07-09 20:59:55,403 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 20:59:55,824 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/tokenizer_config.json
+2025-07-09 20:59:55,824 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-07-09 20:59:56,852 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/tokenizer_config.json
+2025-07-09 20:59:56,852 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-07-09 20:59:58,881 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/tokenizer_config.json
+2025-07-09 20:59:58,881 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-07-09 21:02:52,039 - __main__ - INFO - Testing masking probability: 0.6
+2025-07-09 21:07:45,645 - __main__ - INFO - Testing masking probability: 0.7
+2025-07-09 21:12:32,759 - __main__ - INFO - Testing masking probability: 0.8
+2025-07-09 21:17:17,184 - __main__ - INFO - Testing masking probability: 0.9
+2025-07-09 21:21:16,749 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 21:21:16,749 - huggingface_hub.utils._http - WARNING - Retrying in 1s [Retry 1/5].
+2025-07-09 21:21:17,770 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 21:21:17,770 - huggingface_hub.utils._http - WARNING - Retrying in 2s [Retry 2/5].
+2025-07-09 21:21:19,793 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 21:21:19,793 - huggingface_hub.utils._http - WARNING - Retrying in 4s [Retry 3/5].
+2025-07-09 21:21:23,816 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 21:21:23,816 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 4/5].
+2025-07-09 21:21:31,843 - huggingface_hub.utils._http - WARNING - HTTP Error 429 thrown while requesting HEAD https://huggingface.co/roberta-large/resolve/main/config.json
+2025-07-09 21:21:31,844 - huggingface_hub.utils._http - WARNING - Retrying in 8s [Retry 5/5].
+2025-07-09 21:22:19,809 - __main__ - INFO - Training decoder for distilbert-base-uncased...
+2025-07-09 21:22:21,628 - __main__ - INFO - Testing 14-bit quantization
+2025-07-09 21:23:56,544 - __main__ - INFO - Testing 13-bit quantization
+2025-07-09 21:25:29,485 - __main__ - INFO - Testing 11-bit quantization
+2025-07-09 21:27:02,220 - __main__ - INFO - Testing 10-bit quantization
+2025-07-09 21:28:34,579 - __main__ - INFO - Testing 9-bit quantization
+2025-07-09 21:30:09,105 - __main__ - INFO - Testing 7-bit quantization
+2025-07-09 21:31:43,092 - __main__ - INFO - Testing 6-bit quantization
+2025-07-09 21:33:17,275 - __main__ - INFO - Testing 4-bit quantization
+2025-07-09 21:34:58,706 - __main__ - INFO - Testing 3-bit quantization
+2025-07-09 21:36:31,862 - __main__ - INFO - Results saved to ./results/results/results_20250709_213631.json
+2025-07-09 21:36:31,867 - __main__ - INFO - CSV results saved to ./results/results/results_20250709_213631.csv
+2025-07-09 21:36:31,867 - __main__ - INFO - Creating visualizations...
+2025-07-09 21:36:41,993 - __main__ - INFO - All visualizations created!
+2025-07-09 21:36:41,993 - __main__ - INFO - Experiments completed!

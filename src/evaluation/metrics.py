@@ -11,6 +11,11 @@ import nltk
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
 import Levenshtein
 
+for res in ("punkt", "punkt_tab"):
+    try:
+        nltk.data.find(f"tokenizers/{res}")
+    except LookupError:
+        nltk.download(res, quiet=True)
 
 class CompressionMetrics:
     def __init__(self, device: str = "cuda"):

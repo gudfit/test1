@@ -1,6 +1,7 @@
 # src/models/knowledge_compressor.py
 """LLM as Static Knowledge Compressor implementation for Experiment 1B."""
 
+from datasets import Value
 import torch
 import torch.nn as nn
 import numpy as np
@@ -284,6 +285,8 @@ class KnowledgeCompressor:
 
         if task_type == "classification":
             dataset = Dataset.from_list(fine_tune_data)
+            dataset = dataset.rename_column("label", "labels")
+            dataset = dataset.cast_column("labels", Value("float32"))
 
             def tokenize_function(examples):
                 return self.tokenizer(
@@ -314,7 +317,7 @@ class KnowledgeCompressor:
                     per_device_eval_batch_size=8,
                     num_train_epochs=3,
                     learning_rate=2e-5,
-                    evaluation_strategy="no",
+                    eval_strategy="no",
                     logging_strategy="no",
                     seed=42,
                     disable_tqdm=True,

@@ -1,0 +1,443 @@
+{
+  "bert-base-uncased": {
+    "llm": {
+      "size": {
+        "total_parameters": 109514298,
+        "theoretical_size_mb": 417.7638931274414,
+        "disk_size_mb": 417.7864990234375,
+        "size_gb": 0.4079946279525757
+      },
+      "factual_recall": 0.0016129032258064516,
+      "reasoning_capability": 0.071,
+      "perplexity": 7.516889603543535,
+      "inference_cost": {
+        "avg_inference_time_ms": 5.86637020111084,
+        "throughput_samples_per_sec": 170.4631596230737,
+        "estimated_flops": 28035660288,
+        "estimated_gflops": 28.035660288,
+        "model_parameters": 109514298
+      },
+      "data_efficiency": {
+        "efficiency_curve": [
+          {
+            "data_size": 10,
+            "performance": 1.0,
+            "reached_target": true
+          },
+          {
+            "data_size": 50,
+            "performance": 1.0,
+            "reached_target": true
+          },
+          {
+            "data_size": 100,
+            "performance": 1.0,
+            "reached_target": true
+          }
+        ],
+        "min_data_for_90_percent": 10,
+        "data_efficiency_score": 100.0
+      }
+    },
+    "gzip": {
+      "size": {
+        "original_size_mb": 0.7217321395874023,
+        "compressed_size_mb": 0.2570199966430664,
+        "compression_ratio": 2.8080777722120183,
+        "size_gb": 0.00025099609047174454
+      },
+      "factual_recall": 0.0,
+      "reasoning_capability": 0.0,
+      "perplexity": Infinity,
+      "decompression_cost": {
+        "time_ms": 5.138874053955078,
+        "one_time_cost": true,
+        "dynamic_interaction": false
+      },
+      "data_efficiency": {
+        "adaptable": false,
+        "fine_tunable": false
+      }
+    },
+    "comparison": {
+      "size_ratio": 1625.5019238975158,
+      "summary": {
+        "size_overhead_factor": 1625.5019238975158,
+        "functional_utility_gain": 1.6129032258064515,
+        "reasoning_capability_gain": 70.99999999999999,
+        "adaptability": "LLM is adaptable, Gzip is not",
+        "use_case": "LLM for knowledge interaction, Gzip for data storage"
+      }
+    }
+  },
+  "roberta-base": {
+    "llm": {
+      "size": {
+        "total_parameters": 124697433,
+        "theoretical_size_mb": 475.68295669555664,
+        "disk_size_mb": 475.70605087280273,
+        "size_gb": 0.4645566903054714
+      },
+      "factual_recall": 0.0,
+      "reasoning_capability": 0.282,
+      "perplexity": 5.139717921494582,
+      "inference_cost": {
+        "avg_inference_time_ms": 5.867125988006592,
+        "throughput_samples_per_sec": 170.44120103167563,
+        "estimated_flops": 31922542848,
+        "estimated_gflops": 31.922542848,
+        "model_parameters": 124697433
+      },
+      "data_efficiency": {
+        "efficiency_curve": [
+          {
+            "data_size": 10,
+            "performance": 1.0,
+            "reached_target": true
+          },
+          {
+            "data_size": 50,
+            "performance": 1.0,
+            "reached_target": true
+          },
+          {
+            "data_size": 100,
+            "performance": 1.0,
+            "reached_target": true
+          }
+        ],
+        "min_data_for_90_percent": 10,
+        "data_efficiency_score": 100.0
+      }
+    },
+    "gzip": {
+      "size": {
+        "original_size_mb": 0.7217321395874023,
+        "compressed_size_mb": 0.2570199966430664,
+        "compression_ratio": 2.8080777722120183,
+        "size_gb": 0.00025099609047174454
+      },
+      "factual_recall": 0.0,
+      "reasoning_capability": 0.0,
+      "perplexity": Infinity,
+      "decompression_cost": {
+        "time_ms": 5.111932754516602,
+        "one_time_cost": true,
+        "dynamic_interaction": false
+      },
+      "data_efficiency": {
+        "adaptable": false,
+        "fine_tunable": false
+      }
+    },
+    "comparison": {
+      "size_ratio": 1850.8522958757721,
+      "summary": {
+        "size_overhead_factor": 1850.8522958757721,
+        "functional_utility_gain": 0.0,
+        "reasoning_capability_gain": 281.99999999999994,
+        "adaptability": "LLM is adaptable, Gzip is not",
+        "use_case": "LLM for knowledge interaction, Gzip for data storage"
+      }
+    }
+  },
+  "distilbert-base-uncased": {
+    "llm": {
+      "size": {
+        "total_parameters": 66985530,
+        "theoretical_size_mb": 255.5295181274414,
+        "disk_size_mb": 255.5415802001953,
+        "size_gb": 0.24955232441425323
+      },
+      "factual_recall": 0.06774193548387097,
+      "reasoning_capability": 0.071,
+      "perplexity": 9.77356855255466,
+      "inference_cost": {
+        "avg_inference_time_ms": 2.7726101875305176,
+        "throughput_samples_per_sec": 360.6709679194646,
+        "estimated_flops": 17148295680,
+        "estimated_gflops": 17.14829568,
+        "model_parameters": 66985530
+      },
+      "data_efficiency": {
+        "efficiency_curve": [
+          {
+            "data_size": 10,
+            "performance": 1.0,
+            "reached_target": true
+          },
+          {
+            "data_size": 50,
+            "performance": 1.0,
+            "reached_target": true
+          },
+          {
+            "data_size": 100,
+            "performance": 1.0,
+            "reached_target": true
+          }
+        ],
+        "min_data_for_90_percent": 10,
+        "data_efficiency_score": 100.0
+      }
+    },
+    "gzip": {
+      "size": {
+        "original_size_mb": 0.7217321395874023,
+        "compressed_size_mb": 0.2570199966430664,
+        "compression_ratio": 2.8080777722120183,
+        "size_gb": 0.00025099609047174454
+      },
+      "factual_recall": 0.0,
+      "reasoning_capability": 0.0,
+      "perplexity": Infinity,
+      "decompression_cost": {
+        "time_ms": 4.952907562255859,
+        "one_time_cost": true,
+        "dynamic_interaction": false
+      },
+      "data_efficiency": {
+        "adaptable": false,
+        "fine_tunable": false
+      }
+    },
+    "comparison": {
+      "size_ratio": 994.2478543997329,
+      "summary": {
+        "size_overhead_factor": 994.2478543997329,
+        "functional_utility_gain": 67.74193548387098,
+        "reasoning_capability_gain": 70.99999999999999,
+        "adaptability": "LLM is adaptable, Gzip is not",
+        "use_case": "LLM for knowledge interaction, Gzip for data storage"
+      }
+    }
+  },
+  "crumpled_paper": {
+    "method_comparison": {
+      "method_metrics": {
+        "bert_0.3": {
+          "mean_tcm": 570.6951645905759,
+          "std_tcm": 294.1763712496184,
+          "mean_pcm": 17.338097764727742,
+          "std_pcm": 3.4099311141925854,
+          "crease_density": 0.051022463048040353,
+          "quality": "Failed - Severe degradation"
+        },
+        "bert_0.5": {
+          "mean_tcm": 614.2733926434139,
+          "std_tcm": 312.3908412796989,
+          "mean_pcm": 17.254868989244063,
+          "std_pcm": 2.8002250878159733,
+          "crease_density": 0.04851217075164794,
+          "quality": "Failed - Severe degradation"
+        },
+        "bert_0.7": {
+          "mean_tcm": 646.7533876684914,
+          "std_tcm": 327.9614877149349,
+          "mean_pcm": 17.310994979695884,
+          "std_pcm": 3.075397312070079,
+          "crease_density": 0.05296012144218983,
+          "quality": "Failed - Severe degradation"
+        }
+      },
+      "ranking": [
+        "bert_0.3",
+        "bert_0.5",
+        "bert_0.7"
+      ],
+      "best_method": "bert_0.3",
+      "worst_method": "bert_0.7"
+    },
+    "best_method_details": {
+      "mean_tcm": 570.6951645905759,
+      "std_tcm": 294.1763712496184,
+      "mean_pcm": 17.338097764727742,
+      "std_pcm": 3.4099311141925854,
+      "mean_crease_density": 0.051022463048040353,
+      "total_samples": 20,
+      "individual_metrics": [
+        {
+          "total_crease_magnitude": 745.7597389613521,
+          "peak_crease_magnitude": 17.394653967110266,
+          "mean_crease": 4.097580983304133,
+          "std_crease": 4.03042597212916,
+          "significant_creases": 10,
+          "crease_density": 0.054945054945054944,
+          "profile_length": 182
+        },
+        {
+          "total_crease_magnitude": 943.4730784700225,
+          "peak_crease_magnitude": 23.030760579163896,
+          "mean_crease": 5.045310580053596,
+          "std_crease": 4.769585656800617,
+          "significant_creases": 9,
+          "crease_density": 0.0481283422459893,
+          "profile_length": 187
+        },
+        {
+          "total_crease_magnitude": 658.2582646833125,
+          "peak_crease_magnitude": 15.789816090744957,
+          "mean_crease": 4.359326256180878,
+          "std_crease": 3.7484733802941337,
+          "significant_creases": 7,
+          "crease_density": 0.046357615894039736,
+          "profile_length": 151
+        },
+        {
+          "total_crease_magnitude": 1088.7957531859133,
+          "peak_crease_magnitude": 22.747805018716676,
+          "mean_crease": 5.017491950165499,
+          "std_crease": 4.558417215771154,
+          "significant_creases": 10,
+          "crease_density": 0.04608294930875576,
+          "profile_length": 217
+        },
+        {
+          "total_crease_magnitude": 696.1214995344329,
+          "peak_crease_magnitude": 20.98747328212124,
+          "mean_crease": 3.3957146318752827,
+          "std_crease": 3.6736850713818985,
+          "significant_creases": 11,
+          "crease_density": 0.05365853658536585,
+          "profile_length": 205
+        },
+        {
+          "total_crease_magnitude": 1014.1425696042993,
+          "peak_crease_magnitude": 17.89709732600499,
+          "mean_crease": 4.156322006574997,
+          "std_crease": 4.266208478586058,
+          "significant_creases": 16,
+          "crease_density": 0.06557377049180328,
+          "profile_length": 244
+        },
+        {
+          "total_crease_magnitude": 536.0526667660472,
+          "peak_crease_magnitude": 20.271524544312403,
+          "mean_crease": 4.78618452469685,
+          "std_crease": 3.7665504134241385,
+          "significant_creases": 6,
+          "crease_density": 0.05357142857142857,
+          "profile_length": 112
+        },
+        {
+          "total_crease_magnitude": 488.6948952867328,
+          "peak_crease_magnitude": 15.664709278426376,
+          "mean_crease": 4.141482163446888,
+          "std_crease": 3.827397240727812,
+          "significant_creases": 4,
+          "crease_density": 0.03389830508474576,
+          "profile_length": 118
+        },
+        {
+          "total_crease_magnitude": 929.7938585466186,
+          "peak_crease_magnitude": 19.822659241610605,
+          "mean_crease": 4.8680306730189455,
+          "std_crease": 3.818562853804329,
+          "significant_creases": 6,
+          "crease_density": 0.031413612565445025,
+          "profile_length": 191
+        },
+        {
+          "total_crease_magnitude": 381.7582470781377,
+          "peak_crease_magnitude": 15.798813707090146,
+          "mean_crease": 3.9356520317333783,
+          "std_crease": 3.3452761975903273,
+          "significant_creases": 3,
+          "crease_density": 0.030927835051546393,
+          "profile_length": 97
+        },
+        {
+          "total_crease_magnitude": 72.99414172445395,
+          "peak_crease_magnitude": 8.95671801090113,
+          "mean_crease": 1.2585196849043785,
+          "std_crease": 2.0253860841755933,
+          "significant_creases": 4,
+          "crease_density": 0.06896551724137931,
+          "profile_length": 58
+        },
+        {
+          "total_crease_magnitude": 237.4717085398134,
+          "peak_crease_magnitude": 19.694313162935313,
+          "mean_crease": 3.9578618089968898,
+          "std_crease": 4.527099817107638,
+          "significant_creases": 4,
+          "crease_density": 0.06666666666666667,
+          "profile_length": 60
+        },
+        {
+          "total_crease_magnitude": 513.4121367987777,
+          "peak_crease_magnitude": 13.124278780464246,
+          "mean_crease": 3.9191766167845627,
+          "std_crease": 3.3959627069466953,
+          "significant_creases": 8,
+          "crease_density": 0.061068702290076333,
+          "profile_length": 131
+        },
+        {
+          "total_crease_magnitude": 163.49725377951944,
+          "peak_crease_magnitude": 12.963081594952708,
+          "mean_crease": 2.4772311178715065,
+          "std_crease": 3.5697915523548773,
+          "significant_creases": 6,
+          "crease_density": 0.09090909090909091,
+          "profile_length": 66
+        },
+        {
+          "total_crease_magnitude": 510.7986027654351,
+          "peak_crease_magnitude": 17.851054818646602,
+          "mean_crease": 3.648561448324536,
+          "std_crease": 3.612914217236887,
+          "significant_creases": 8,
+          "crease_density": 0.05714285714285714,
+          "profile_length": 140
+        },
+        {
+          "total_crease_magnitude": 813.7014023634695,
+          "peak_crease_magnitude": 16.66241033533555,
+          "mean_crease": 4.676444841169364,
+          "std_crease": 3.7521058263466065,
+          "significant_creases": 7,
+          "crease_density": 0.040229885057471264,
+          "profile_length": 174
+        },
+        {
+          "total_crease_magnitude": 299.5334780407151,
+          "peak_crease_magnitude": 13.615618813791315,
+          "mean_crease": 4.538386030919926,
+          "std_crease": 3.772922502758105,
+          "significant_creases": 3,
+          "crease_density": 0.045454545454545456,
+          "profile_length": 66
+        },
+        {
+          "total_crease_magnitude": 737.2930342081243,
+          "peak_crease_magnitude": 18.332081043667937,
+          "mean_crease": 3.7237021929703245,
+          "std_crease": 3.5941430653456043,
+          "significant_creases": 9,
+          "crease_density": 0.045454545454545456,
+          "profile_length": 198
+        },
+        {
+          "total_crease_magnitude": 129.7499590484487,
+          "peak_crease_magnitude": 16.413394397878996,
+          "mean_crease": 5.189998361937947,
+          "std_crease": 4.586549955744416,
+          "significant_creases": 1,
+          "crease_density": 0.04,
+          "profile_length": 25
+        },
+        {
+          "total_crease_magnitude": 452.60100242589255,
+          "peak_crease_magnitude": 19.743691300679476,
+          "mean_crease": 4.526010024258926,
+          "std_crease": 3.7570190812392794,
+          "significant_creases": 4,
+          "crease_density": 0.04,
+          "profile_length": 100
+        }
+      ],
+      "quality_assessment": "Failed - Severe degradation"
+    }
+  }
+}

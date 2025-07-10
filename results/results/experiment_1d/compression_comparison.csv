@@ -1,0 +1,13 @@
+Method,Type,BPC,Compression Ratio,Reconstruction Accuracy,System Size (MB)
+AR-gpt2,LLM Lossless,1.248,6.43,100.0%,474.7
+AR-gpt2-medium,LLM Lossless,1.138,7.05,100.0%,1353.5
+bert-base-uncased-pm,LLM Lossy,4.304,1.87,8.8%,417.8
+bert-base-uncased-lsq,LLM Lossy,1337.617,0.01,5.2%,511.8
+roberta-base-pm,LLM Lossy,5.511,1.46,36.3%,475.7
+roberta-base-lsq,LLM Lossy,1360.630,0.01,13.5%,627.7
+distilbert-base-uncased-pm,LLM Lossy,4.401,1.82,8.2%,255.5
+distilbert-base-uncased-lsq,LLM Lossy,1337.617,0.01,4.3%,349.6
+GZIP,Traditional,4.954,1.74,100.0%,0.001
+BZIP2,Traditional,5.347,1.64,100.0%,0.001
+LZMA,Traditional,6.178,1.45,100.0%,0.001
+ZSTD,Traditional,4.851,1.76,100.0%,0.001

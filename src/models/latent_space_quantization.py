@@ -113,6 +113,25 @@ class LatentSpaceQuantizationCompressor(BaseCompressor):
         metadata_bits = 2 * 32
         return state_bits + metadata_bits
 
+    def calculate_model_size(self) -> dict[str, float]:
+        """
+        Return the approximate disk footprint (FP‑32 weights) and parameter count
+        for the encoder *and* the small decoder we train on top.
+        """
+        param_count = (
+            sum(p.numel() for p in self.model.parameters()) +
+            sum(p.numel() for p in self.decoder.parameters())
+        )
+        # 4 bytes per fp32 parameter  → MB
+        disk_size_mb = (param_count * 4) / (1024 ** 2)
+
+        # add extra tables / codebooks here if you store any
+        extras_mb = 0.0
+        return {
+            "disk_size_mb": disk_size_mb + extras_mb,
+            "param_count":  param_count,
+        }
+
     def train_decoder(
         self,
         texts: List[str],

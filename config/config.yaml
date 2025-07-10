@@ -107,9 +107,9 @@ experiment_1d:
 
 experiment_2a:
   output_dir: "results/experiment_2a"
-  num_test_samples: 10 
+  num_test_samples: 200 
   semantic_threshold: 0.95
-  retrieval_budgets: [20, 30, 40, 50, 60] 
+  retrieval_budgets: [40, 50, 60, 70, 80] 
   pruning_base_model: "Llama-2-7B" 
   pruning_levels: []
   models:

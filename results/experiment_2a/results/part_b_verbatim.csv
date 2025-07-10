@@ -1,0 +1,13 @@
+model_name,theta,eval_mode,success_rate_on_baseline,retrieval_degradation,retrieval_cost_ms
+Llama-2-7B,20,verbatim,0.0,1.0,1282.8896641731262
+Llama-2-7B,30,verbatim,0.0,1.0,1289.435863494873
+Llama-2-7B,40,verbatim,0.5,0.5,1300.3877401351929
+Llama-2-7B,50,verbatim,1.0,0.0,1305.016577243805
+Llama-2-13B,20,verbatim,0.0,1.0,1602.2725701332092
+Llama-2-13B,30,verbatim,0.0,1.0,1590.661883354187
+Llama-2-13B,40,verbatim,0.5,0.5,1587.0745778083801
+Llama-2-13B,50,verbatim,1.0,0.0,1584.403157234192
+Llama-2-7B-4bit,20,verbatim,0.0,1.0,1965.4460549354553
+Llama-2-7B-4bit,30,verbatim,0.0,1.0,1944.218099117279
+Llama-2-7B-4bit,40,verbatim,0.5,0.5,1948.038101196289
+Llama-2-7B-4bit,50,verbatim,1.0,0.0,1962.528109550476

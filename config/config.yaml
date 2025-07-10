@@ -69,51 +69,56 @@ experiment_1b:
   fine_tune_sizes: [10, 50, 100, 500, 1000, 5000]
   target_performance: 0.80
   
-# Experiment 1C specific settings
 experiment_1c:
-  # Pruning configurations
   pruning:
     levels: [0.0, 0.1, 0.3, 0.5, 0.7, 0.9]
     type: "magnitude"  # or "structured"
     
-  # GLUE evaluation settings
   glue:
     tasks: ["sst2", "mrpc", "rte"]
     train_samples: 500
     eval_samples: 200
     fine_tune_epochs: 100
     
-  # Performance benchmarking
   benchmark:
     batch_size: 8
     num_inference_runs: 50
     
-  # Structural fidelity settings
   structural_fidelity:
     test_samples: 20
     masking_probability: 0.3
     
-  # Sweet spot analysis weights
   sweet_spot_weights:
     downstream_performance: 0.4
     structural_fidelity: 0.3
     computational_efficiency: 0.3
 
 
-# Experiment 1D specific settings
 experiment_1d:
-  # Corpus settings
-  num_samples: 1000  # Number of texts from WikiText-103 test split
+  num_samples: 1000  
   
-  # Autoregressive models for lossless compression
-  ar_models: ["gpt2", "gpt2-medium"]  # Can add more AR models
+  ar_models: ["gpt2", "gpt2-medium"]  
   
-  # Compression evaluation settings
-  pm_masking_levels: [0.3, 0.5, 0.7]  # Masking levels to test
-  lsq_bits: 8  # Quantization bits for LSQ
+  pm_masking_levels: [0.3, 0.5, 0.7]  
+  lsq_bits: 8  
   
-  # Traditional algorithms are hardcoded: gzip, bzip2, lzma, zstd
-  
-  # Evaluation settings
-  max_text_length: 2048  # Maximum length for texts
+  max_text_length: 2048  
   batch_size: 8
+
+experiment_2a:
+  output_dir: "results/experiment_2a"
+  num_test_samples: 10 
+  semantic_threshold: 0.95
+  retrieval_budgets: [20, 30, 40, 50, 60] 
+  pruning_base_model: "Llama-2-7B" 
+  pruning_levels: []
+  models:
+    - name: "Llama-2-7B"
+      path: "meta-llama/Llama-2-7b-hf"
+      quantization: "half" 
+    - name: "Llama-2-13B"
+      path: "meta-llama/Llama-2-13b-hf"
+      quantization: "half"
+    - name: "Llama-2-7B-4bit"
+      path: "meta-llama/Llama-2-7b-hf"
+      quantization: "4bit" 

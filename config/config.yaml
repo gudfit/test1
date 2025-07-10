@@ -68,3 +68,33 @@ experiment_1b:
 
   fine_tune_sizes: [10, 50, 100, 500, 1000, 5000]
   target_performance: 0.80
+  
+# Experiment 1C specific settings
+experiment_1c:
+  # Pruning configurations
+  pruning:
+    levels: [0.0, 0.1, 0.3, 0.5, 0.7, 0.9]
+    type: "magnitude"  # or "structured"
+    
+  # GLUE evaluation settings
+  glue:
+    tasks: ["sst2", "mrpc", "rte"]
+    train_samples: 500
+    eval_samples: 200
+    fine_tune_epochs: 100
+    
+  # Performance benchmarking
+  benchmark:
+    batch_size: 8
+    num_inference_runs: 50
+    
+  # Structural fidelity settings
+  structural_fidelity:
+    test_samples: 20
+    masking_probability: 0.3
+    
+  # Sweet spot analysis weights
+  sweet_spot_weights:
+    downstream_performance: 0.4
+    structural_fidelity: 0.3
+    computational_efficiency: 0.3

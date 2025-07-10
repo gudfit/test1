@@ -98,3 +98,22 @@ experiment_1c:
     downstream_performance: 0.4
     structural_fidelity: 0.3
     computational_efficiency: 0.3
+
+
+# Experiment 1D specific settings
+experiment_1d:
+  # Corpus settings
+  num_samples: 1000  # Number of texts from WikiText-103 test split
+  
+  # Autoregressive models for lossless compression
+  ar_models: ["gpt2", "gpt2-medium"]  # Can add more AR models
+  
+  # Compression evaluation settings
+  pm_masking_levels: [0.3, 0.5, 0.7]  # Masking levels to test
+  lsq_bits: 8  # Quantization bits for LSQ
+  
+  # Traditional algorithms are hardcoded: gzip, bzip2, lzma, zstd
+  
+  # Evaluation settings
+  max_text_length: 2048  # Maximum length for texts
+  batch_size: 8

@@ -97,8 +97,30 @@ class PredictiveMaskingCompressor(BaseCompressor):
             position_bits = 0
 
         total_bits = unmasked_bits + position_bits
-
         return total_bits
+
+    def calculate_model_size(self) -> dict[str, float]:
+        """
+        Return a dictionary identical to the helpers in the other compressors.
+
+        Returns
+        -------
+        {
+            'disk_size_mb': <float>,      # model weights on disk
+            'param_count':  <int>         # total parameters
+        }
+        """
+        # ---- count parameters ----
+        param_count = sum(p.numel() for p in self.model.parameters())
+        # 4 bytes per fp32 parameter  ➜  convert to MB
+        disk_size_mb = (param_count * 4) / (1024 ** 2)
+
+        # if you save any extra tables / codebooks, add them here
+        extras_mb = 0.0
+        return {
+            "disk_size_mb": disk_size_mb + extras_mb,
+            "param_count":  param_count,
+        }
 
     def adaptive_masking(self, text: str, target_ratio: float = 2.0) -> Dict[str, any]:
         low, high = 0.0, 1.0
